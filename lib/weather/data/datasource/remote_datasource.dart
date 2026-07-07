@@ -14,8 +14,11 @@ class RemoteDataSource implements BaseRemoteDataSource {
         '${AppConstants.baseUrl}/weather',
         queryParameters: {'q': city, 'appid': AppConstants.apiKey},
       );
+
+      print(response.data);
       return WeatherModel.fromJson(response.data);
     } catch (e) {
+      print(e);
       return null;
     }
   }

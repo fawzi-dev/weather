@@ -1,7 +1,7 @@
 class Weather {
   final int id;
   final String name;
-  final String temp;
+  final num temp;
   final String description;
   final int pressure;
 

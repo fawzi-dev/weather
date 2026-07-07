@@ -2,8 +2,8 @@ import 'package:weather/weather/data/datasource/remote_datasource.dart';
 import 'package:weather/weather/domain/entities/weather.dart';
 import 'package:weather/weather/domain/repository/base_weather_repository.dart';
 
-abstract class WeatherRepository implements BaseWeatherRepository {
-  final RemoteDataSource remoteDataSource;
+class WeatherRepository implements BaseWeatherRepository {
+  final BaseRemoteDataSource remoteDataSource;
   WeatherRepository(this.remoteDataSource);
 
   @override
